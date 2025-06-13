@@ -10,7 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Contagem Regressiva - Estilo */
 .countdown-container {
   min-height: 100vh;
   background: linear-gradient(
@@ -24,6 +23,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+}
+
+.countdown-container.dark-mode {
+  background: linear-gradient(135deg, #333 0%, #555 25%, #777 75%, #999 100%);
 }
 
 .countdown-content {
@@ -107,6 +110,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+}
+
+.namoro-container.dark-mode {
+  background: linear-gradient(135deg, #333 0%, #555 25%, #777 75%, #999 100%);
 }
 
 .namoro-content {
@@ -284,5 +291,53 @@ body {
 
   .tempo-adicional-number {
     font-size: 1.5rem;
+  }
+  /* Modo escuro antes da data */
+  .dark-mode {
+    background: linear-gradient(135deg, #333 0%, #555 25%, #777 75%, #999 100%);
+    color: #ccc;
+  }
+
+  /* Alterações adicionais nas containers */
+  .countdown-container.dark-mode,
+  .namoro-container.dark-mode {
+    background: linear-gradient(135deg, #333 0%, #555 25%, #777 75%, #999 100%);
+  }
+
+  /* Estilo dos títulos e textos quando no modo escuro */
+  .dark-mode .countdown-title,
+  .dark-mode .namoro-title {
+    color: white;
+  }
+
+  .dark-mode .countdown-subtitle,
+  .dark-mode .namoro-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .dark-mode .countdown-footer,
+  .dark-mode .namoro-footer {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .dark-mode .countdown-date,
+  .dark-mode .namoro-date {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .blurred-text {
+    filter: blur(4px);
+    color: transparent;
+  }
+
+  .countdown-container.dark-mode .blurred-text,
+  .namoro-container.dark-mode .blurred-text {
+    filter: blur(4px);
+    color: transparent;
+  }
+
+  .countdown-container .blurred-text,
+  .namoro-container .blurred-text {
+    filter: none;
+    color: inherit;
   }
 }
