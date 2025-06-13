@@ -86,7 +86,6 @@ const ContadorNamoro = () => {
   }, []);
 
   if (!isNamorando) {
-    // Layout de contagem regressiva
     return (
       <div className="countdown-container">
         <div className="countdown-content">
@@ -127,7 +126,6 @@ const ContadorNamoro = () => {
     );
   }
 
-  // Layout de dias namorando
   return (
     <div className="namoro-container">
       <div className="namoro-content">
@@ -136,7 +134,6 @@ const ContadorNamoro = () => {
           <p className="namoro-subtitle">Nossa linda história de amor...</p>
         </div>
         <div className="namoro-card">
-          {/* Seção principal - Anos, Meses, Dias */}
           <div className="tempo-principal">
             <div className="tempo-grid">
               {tempoNamorando.anos > 0 && (
@@ -165,7 +162,6 @@ const ContadorNamoro = () => {
             <div className="tempo-title">💕 Tempo Juntos 💕</div>
           </div>
 
-          {/* Seção secundária - Horas, Minutos, Segundos */}
           <div className="tempo-adicional">
             <div className="tempo-adicional-title">
               + Tempo adicional de hoje:
@@ -203,7 +199,6 @@ const ContadorNamoro = () => {
   );
 };
 
-// Renderizar o componente - React 18+
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(<ContadorNamoro />);
