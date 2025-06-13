@@ -11,7 +11,7 @@
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "https://[seu-nome-de-usuario].github.io/[nome-do-repositorio]"
+    "homepage": "https://GabrielMalava.github.io/contador"
   },
   "scripts": {
     "start": "react-scripts start",
